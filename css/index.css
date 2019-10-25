@@ -1,0 +1,19 @@
+body {
+    background-color: #f1f1f1;
+}
+.layer{
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+div{
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+/* radio button style */
+
+  /* ---------------------------------------------------------------------- */
