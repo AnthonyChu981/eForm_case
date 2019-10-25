@@ -1,4 +1,11 @@
-background {
-    background-position: right bottom, left top;
-    background-color: "#ff4d4d";
+body {
+    background-color: #ffe6e6;
+}
+.layer{
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
 }
