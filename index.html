@@ -3,126 +3,119 @@
         <title> 
             香港家庭福利會家福會全港賣旗日2019網上義工登記
         </title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script src="./index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- Radio Button -->
+    <style type="text/css">
+        
+    </style>
+
     </head>
     <body>
         <div class="layer">
 
             <hr>
             <form>
+            
             <div>
-                <br>*必答<br><br>
+                <br><label><span class="star_color">*</span>必答</label><br><br>
             </div>
-            <div class="abgne-menu-20140101-1">      
-                <label>1. 你以個人或者家庭義工身份身參加。</label>
+            <div>
+                <label>1. 你以個人或者家庭義工身份身參加。</label><br><br> 
+                <input type="radio" id="q1.1" class="q1" name="name" />
+                <label class="label_radio_button" for="q1.1">個人身份 / 家庭義工身份</label>
+            </div>
+            <br>
+            <div>
+                <label>2.個人/家庭義工姓名:</label><br>
+                <label><span class="star_color">*</span>18歲以下賣旗者需家長/監護人簽署同意登記之義工參與賣旗活動</label><br>
+                <label><span class="star_color">*</span>14-歲以下兒童賣旗必須由家長/監護人陪同下方可賣旗</label><br>
+                <br><input type="text" name="name"><br>
+                
+            </div>
+            <br>
+            <div>
+                <label>3. 性別<span class="star_color">*</span></label><br><br>
+                <input type="radio" id="q3.1" class="q3" name="name" />
+                <label class="label_radio_button" for="q3.1">男性</label>
+                <input type="radio" id="q3.2" class="q3" name="name" />
+                <label class="label_radio_button" for="q3.2">女性</label>
+            </div>
+            <br>
+            <div>
+                <label>4. 年齡<span class="star_color">*</span></label>
                 <br>
-                    <label class="select">
-                        <input type="radio" name="color" value="1">
-                        <span class="color">個人身份 / 家庭義工身份</span>  
-                    </label>
-                <br>
+                <select name="age">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18+">18 以上</option>
+                </select>
             </div>
             <br>
             <div>
-                
-                    2.個人/家庭義工姓名:<br>
-                    *18歲以下賣旗者需家長/監護人簽署同意登記之義工參與賣旗活動
-                    *14-歲以下兒童賣旗必須由家長/監護人陪同下方可賣旗
-
-                    <br><input type="text" name="name"><br>
-                
+                <label>5. 聯絡電話<span class="star_color">*</span><label></label>
+                <br><input type="text" name="contact"><br>
             </div>
             <br>
             <div>
-                
-                    3.性別*
-                    
-                    <br><input type="radio" name="gender" value="male"> 男性<br>
-                    <input type="radio" name="gender" value="female"> 女性<br>
-                
+                <label>6. 緊急聯絡人/家長姓名<span class="star_color">*</span></label>
+                <br><input type="text" name="emergence contact person"><br>
             </div>
             <br>
             <div>
-                
-                    4.年齡*
-                    <br>
-                    <select name="age">
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-
-                      </select>
-                
+                <label>7. 緊急聯絡人電話<span class="star_color">*</span></label>
+                <br><input type="text" name="emergence contact "><br>
             </div>
             <br>
             <div>
-                
-                    5.聯絡電話*
-
-                    <br><input type="text" name="contact"><br>
-                
+                <label>8. 請選擇領取旗袋及交還旗袋地點 。詳細地址請參考下列網址。<span class="star_color">*</span></label><br>
+                <a href="https://www.hkfws.org.hk/b5_service_venue.aspx?aaa=2">https://www.hkfws.org.hk/b5_service_venue.aspx?aaa=2</a><br><br>
+                <input type="radio" id="q8.1" class="q8" name="name" />
+                <label class="label_radio_button" for="q8.1">香港</label>
+                <input type="radio" id="q8.2" class="q8" name="name" />
+                <label class="label_radio_button" for="q8.2">九龍</label>
+                <input type="radio" id="q8.3" class="q8" name="name" />
+                <label class="label_radio_button" for="q8.3">新界</label>
+                <input type="radio" id="q8.4" class="q8" name="name" />
+                <label class="label_radio_button" for="q8.4">離島</label>
             </div>
             <br>
             <div>
-                
-                    6.緊急聯絡人/家長姓名*
-
-                    <br><input type="text" name="emergence contact person"><br>
-                
-            </div>
-            <br>
-            <div>
-                
-                    7.緊急聯絡人電話*
-
-                    <br><input type="text" name="emergence contact "><br>
-                
-            </div>
-            <br>
-            <div>
-                
-                    8.請選擇領取旗袋及交還旗袋地點 。詳細地址請參考下列網址。*<br>
-                    https://www.hkfws.org.hk/b5_service_venue.aspx?aaa=2<br><br>
-
-                    <input type="radio" name="place" value="hong kong"> 香港<br>
-                    <input type="radio" name="place" value="kowloon"> 九龍<br>
-                    <input type="radio" name="place" value="new territories"> 新界<br>
-                    <input type="radio" name="place" value="islands district"> 離島<br>
-                
-            </div>
-            <br>
-            <div>
-                
-                    9.若以新界區作為領取旗袋的地點, 請選擇下列地點。*<br>
-
-                    <input type="radio" name="place" value="將軍澳(建明邨)">領取旗袋地點: 將軍澳(建明邨) ; 交還旗袋地點: 將軍澳(建明邨)分會<br>
-                    <input type="radio" name="place" value="將軍澳(唐明苑)"> 領取旗袋地點: 將軍澳(唐明苑) ; 交還旗袋地點: HSBC 新都城中心分行
-                    <br>
-                    <input type="radio" name="place" value="葵芳"> 領取旗袋地點: 葵芳 ; 交還旗袋地點: 葵芳分會
-                    <br>
-                    <input type="radio" name="place" value="葵涌(葵盛西)"> 領取旗袋地點: 葵涌(葵盛西) ; 交還旗袋地點: 葵芳分會<br>
-                    <input type="radio" name="place" value="葵涌(大窩口)"> 領取旗袋地點: 葵涌(大窩口) ; 交還旗袋地點: 葵芳分會<br>
-                    <input type="radio" name="place" value="葵涌(祖堯邨)"> 領取旗袋地點: 葵涌(祖堯邨); 交還旗袋地點: HSBC 美孚新邨分行
-                    <br>
-                    <input type="radio" name="place" value="荃灣"> 領取旗袋地點: 荃灣 ; 交還旗袋地點: HSBC 荃新天地分行<br>
-                    <input type="radio" name="place" value="青衣(長亨邨)"> 領取旗袋地點: 青衣(長亨邨) ; 交還旗袋地點: HSBC 荃新天地分行<br>
-                    <input type="radio" name="place" value="屯門(良景邨)"> 領取旗袋地點: 屯門(良景邨) ; 交還旗袋地點: HSBC海趣坊分行<br>
-                    <input type="radio" name="place" value="屯門(蝴蝶邨)"> 領取旗袋地點: 屯門(蝴蝶邨) ; 交還旗袋地點: HSBC 海趣坊分行<br>
-                    <input type="radio" name="place" value="青衣(宏福花園)  "> 領取旗袋地點: 青衣(宏福花園) ; 交還旗袋地點: HSBC:荃新天地分行
-                    <br>
-                
+                <label>9. 若以新界區作為領取旗袋的地點, 請選擇下列地點。<span class="star_color">*</span></label><br><br>
+                <input type="radio" id="q9.1" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.1">領取旗袋地點: 將軍澳(建明邨) ; 交還旗袋地點: 將軍澳(建明邨)分會</label><br><br>
+                <input type="radio" id="q9.2" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.2">領取旗袋地點: 將軍澳(唐明苑) ; 交還旗袋地點: HSBC 新都城中心分行</label><br><br>
+                <input type="radio" id="q9.3" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.3">領取旗袋地點: 葵芳 ; 交還旗袋地點: 葵芳分會</label><br><br>
+                <input type="radio" id="q9.4" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.4">領取旗袋地點: 葵涌(葵盛西) ; 交還旗袋地點: 葵芳分會</label><br><br>
+                <input type="radio" id="q9.5" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.5">領取旗袋地點: 葵涌(大窩口) ; 交還旗袋地點: 葵芳分會</label><br><br>
+                <input type="radio" id="q9.6" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.6">領取旗袋地點: 葵涌(祖堯邨); 交還旗袋地點: HSBC 美孚新邨分行</label><br><br>
+                <input type="radio" id="q9.7" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.7">領取旗袋地點: 荃灣 ; 交還旗袋地點: HSBC 荃新天地分行</label><br><br>
+                <input type="radio" id="q9.8" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.8">領取旗袋地點: 青衣(長亨邨) ; 交還旗袋地點: HSBC 荃新天地分行</label><br><br>
+                <input type="radio" id="q9.9" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.9">領取旗袋地點: 屯門(良景邨) ; 交還旗袋地點: HSBC海趣坊分行</label><br><br>
+                <input type="radio" id="q9.10" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.10">領取旗袋地點: 屯門(蝴蝶邨) ; 交還旗袋地點: HSBC 海趣坊分行</label><br><br>
+                <input type="radio" id="q9.11" class="q9" name="name" />
+                <label class="label_radio_button" for="q9.11">領取旗袋地點: 青衣(宏福花園) ; 交還旗袋地點: HSBC:荃新天地分行</label><br><br>
             </div>
             <br>
             <div>

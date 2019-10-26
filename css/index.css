@@ -1,5 +1,5 @@
 body {
-    background-color: #f1f1f1;
+    background-color: #F1F1F1;
 }
 .layer{
     margin: auto;
@@ -9,11 +9,20 @@ body {
     background-color: #FFFFFF;
     border-radius: 25px;
 }
-div{
-  margin-right: 40px;
-  margin-left: 40px;
+.star_color{
+    color: red;
 }
 
-/* radio button style */
-
-  /* ---------------------------------------------------------------------- */
+.label_radio_button
+{
+    background-color:#9C3;
+    padding: 5px 12px;
+}
+input[type=radio]
+{
+    display:none;
+}
+input[type=radio]:checked + label
+{
+    background-color:#C33;
+}
