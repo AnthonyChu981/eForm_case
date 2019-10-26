@@ -1,0 +1,104 @@
+/* @media screen and (max-width:768px){
+    .justwrap{
+        position:relative;
+        display:block;
+        float:left;
+        width:150px;
+        min-height:30px;
+        margin:0 30px
+    }
+    .justselect{
+        width:148px;display:block!important;
+        position:absolute;margin:2px 3px;
+        height:26px;z-index:900
+    }
+    .selectbox{
+        position:absolute!important;
+        z-index:1000;
+        pointer-events:none
+    }
+} */
+.selectbox{
+    box-sizing:border-box;
+    font-size:12pt;
+    display:inline-block;
+    float:left;
+    margin:8px 0;
+    outline:none;
+    background:#fff;
+    width:30%;
+    position:relative
+}
+.selectbox-options{
+    position:absolute;
+    width:100%;
+    overflow:visible;
+    z-index:1000
+}
+.selectbox-options--hidden{
+    display:none
+}
+.selectbox__option{
+    padding:5px 10px;
+    cursor:pointer;
+    color:#202020;
+    background:#fff;
+    border-left:2px solid #eee;
+    border-right:2px solid #eee;
+    display:flex;
+    align-items:center;
+    transition:.1s linear all
+}
+.selectbox__option:first-child{
+    border-top:2px solid #eee;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px
+}
+.selectbox__option:last-child{
+    border-bottom:1px solid #eee;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px
+}
+.selectbox__option:hover{
+    background:#EE1A31;
+    color:#fff
+}
+.selectbox__option--selected{
+    color:#fff;
+    border:2px solid #F1F1F1;
+    background:#EE1A31
+}
+.selectbox__label{
+    padding:8px;
+    cursor:pointer;
+    padding:5px 10px;
+    background:#fff;
+    color:#202020;
+    position:relative;
+    display:flex;
+    align-items:center;
+    border-radius:10px;
+    border:2px solid #F1F1F1;
+    transition:150ms linear all;
+    border-color:#F1F1F1;
+}
+.selectbox__label:after{
+    content:"";
+    display:inline;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:6px solid #202020;
+    position:absolute;right:10px;
+    top:50%;transform:translateY(-50%);
+    transition:150ms linear all
+    
+}
+.selectbox__label:hover{
+    border:2px solid #EE1A31;
+    border-color:#EE1A31;
+    box-shadow:0 0 8px 0 #EE1A31;
+}
+.selectbox__label:hover:after{
+    border-top:6px solid #EE1A31
+    
+}

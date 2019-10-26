@@ -5,6 +5,8 @@
         </title>
     <script src="./index.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" href="./css/selectbox.min.css">
+    <script src="./selectbox.min.js"></script>
     </head>
     <body>
         <div class="layer">
@@ -14,18 +16,18 @@
             <form>
             
             <div>
-                <br><label><span class="star_color">*</span>必答</label><br><br>
+                <br><label style="font-weight: bold;"><span class="star_color">* </span><i>必答</i></label><br><br>
             </div>
             <div>
-                <label>1. 你以個人或者家庭義工身份身參加。</label><br><br> 
+                <label>1. 你以個人或者家庭義工身份身參加。</label><span class="star_color">*</span><br><br> 
                 <input type="radio" id="q1.1" class="q1" name="q1" />
                 <label class="label_radio_button" for="q1.1">個人身份 / 家庭義工身份</label>
             </div>
             <br>
             <div>
-                <label>2.個人/家庭義工姓名:</label><br>
-                <label><span class="star_color">*</span>18歲以下賣旗者需家長/監護人簽署同意登記之義工參與賣旗活動</label><br>
-                <label><span class="star_color">*</span>14-歲以下兒童賣旗必須由家長/監護人陪同下方可賣旗</label><br>
+                <label>2.個人/家庭義工姓名:</label> <span class="star_color">*</span><br>
+                <label style="font-size: 12px;"><i>*18歲以下賣旗者需家長/監護人簽署同意登記之義工參與賣旗活動</i></label><br>
+                <label style="font-size: 12px;"><i>*14-歲以下兒童賣旗必須由家長/監護人陪同下方可賣旗</i></label><br>
                 <br><input type="text" name="name"><br>
                 
             </div>
@@ -39,9 +41,9 @@
             </div>
             <br>
             <div>
-                <label>4. 年齡 <span class="star_color">*</span></label>
-                <br>
-                <select name="age">
+                <label>4. 年齡 <span class="star_color">*</span></label><br>
+                <select name="color" id="color" class="justselect" >
+                    <option value="0">請選擇</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
@@ -58,8 +60,9 @@
                     <option value="17">17</option>
                     <option value="18+">18 以上</option>
                 </select>
+                
             </div>
-            <br>
+            <br><br><br>
             <div>
                 <label>5. 聯絡電話 <span class="star_color">*</span><label></label>
                 <br><input type="text" name="contact"><br>
@@ -88,6 +91,7 @@
                 <label class="label_radio_button" for="q8.4">離島</label>
             </div>
             <br>
+            <br>
             <div>
                 <label>9. 若以新界區作為領取旗袋的地點, 請選擇下列地點。<span class="star_color">*</span></label><br><br>
                 <input type="radio" id="q9.1" class="q9" name="q9" />
@@ -115,11 +119,17 @@
             </div>
             <br>
             <div>
-                
-                    <br><input type="submit" value="Submit"><br>
+                <br>
+                <input type="submit" value="Submit">
+                <br>
                 </form>
             </div>
             <br>
+        </div>
+        <br>
+        <div class="layer_bottom">
+            <img src="./images/hkfws-logo-white.svg" style="padding-left: 50px;"></img><br><br>
+            <label style="text-align: center;font-size: 14px;">© 香港家庭福利會 2019免責聲明及私隱政策本會為註冊之有限公司</label>
         </div>
     </body>
 </html>
